@@ -1,0 +1,62 @@
+[
+  { 
+    "name": "headphone",
+    "price": 80,
+    "image": "assets/download (4).jpg"
+  },
+  {
+    "name": "camera",
+    "price": 100,
+    "image": "assets/images.jpg"
+  },
+  {
+    "name": "phone",
+    "price": 200,
+    "image": "assets/phone.jpg"
+  },
+  {
+    "name": "Bag",
+    "price": "$40",
+    "image": "assets/bag.jpg"
+  },
+  { 
+    "name": "headphone",
+    "price": 80,
+    "image": "assets/download (4).jpg"
+  },
+  {
+    "name": "camera",
+    "price": 100,
+    "image": "assets/images.jpg"
+  },
+  {
+    "name": "phone",
+    "price": 200,
+    "image": "assets/phone.jpg"
+  },
+  {
+    "name": "Bag",
+    "price": 40,
+    "image": "assets/bag.jpg"
+  },
+  { 
+    "name": "headphone",
+    "price": 80,
+    "image": "assets/download (4).jpg"
+  },
+  {
+    "name": "camera",
+    "price": 100 ,
+    "image": "assets/images.jpg"
+  },
+  {
+    "name": "phone",
+    "price": 200,
+    "image": "assets/phone.jpg"
+  },
+  {
+    "name": "Bag",
+    "price": 40,
+    "image": "assets/bag.jpg"
+  }
+]
