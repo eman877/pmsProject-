@@ -42,6 +42,7 @@ $cartItems = $_SESSION['cart'] ?? [];
 </div>
 <h3>Total: $<?= $totalPrice ?></h3> 
 
+
                 </div>
             </div>
             <div class="col-8">
