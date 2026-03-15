@@ -26,7 +26,7 @@ $cartItems = isset($_SESSION['cart']) ? $_SESSION['cart'] : [];
         <?php if(!empty($cartItems)): ?>
             
             <?php foreach($cartItems as $item): 
-                $itemTotal = $item['price'] * $item['quantity'];
+                $itemTotal = (float)$item['price'] * $item['quantity'];
                 $totalPrice += $itemTotal;
              
             

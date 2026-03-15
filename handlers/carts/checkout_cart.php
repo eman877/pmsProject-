@@ -7,12 +7,20 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
 
     $totalPrice = 0;
     foreach($cartItems as $item){
-        $totalPrice += $item['price'] * $item['quantity'];
+        $totalPrice += (float)$item['price'] * $item['quantity'];
          $cartItems[] = $item['name'];
     }
 
     $ordersFile = '../../data/orders.json';
     $orders = [];
+    
+ if($totalPrice == 0){
+        echo "Cart is empty. Cannot submit order.";
+        exit;
+    }
+
+
+}
 
     if(file_exists($ordersFile)){
         $orders = json_decode(file_get_contents($ordersFile), true);
@@ -41,5 +49,5 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
     echo "Order submitted successfully! Your order ID is {$newOrder['id']}";
     header("Location:../../checkout.php");
     exit;
-}
+
 ?>

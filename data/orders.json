@@ -1,72 +1,5 @@
 [
     {
-        "id": "69b66dc6e39cc",
-        "customer": {
-            "name": "Eman Mohamed",
-            "email": "emankamel877@gmail.com",
-            "address": "cccx",
-            "phone": "222",
-            "notes": "kkk"
-        },
-        "products": [],
-        "total": 0,
-        "date": "2026-03-15 09:28:54"
-    },
-    {
-        "id": "69b66ddca6645",
-        "customer": {
-            "name": "Eman Mohamed",
-            "email": "emankamel877@gmail.com",
-            "address": "cccx",
-            "phone": "222",
-            "notes": "kkk"
-        },
-        "products": null,
-        "total": 0,
-        "date": "2026-03-15 09:29:16"
-    },
-    {
-        "id": "69b66dee61790",
-        "customer": {
-            "name": "Eman Mohamed",
-            "email": "emankamel877@gmail.com",
-            "address": "cccx",
-            "phone": "222",
-            "notes": "kkk"
-        },
-        "products": null,
-        "total": 0,
-        "date": "2026-03-15 09:29:34"
-    },
-    {
-        "id": "69b66e0ad53c1",
-        "customer": {
-            "name": "Eman Mohamed",
-            "email": "emankamel877@gmail.com",
-            "address": "cccx",
-            "phone": "222",
-            "notes": "kkk"
-        },
-        "products": [],
-        "total": 0,
-        "date": "2026-03-15 09:30:02"
-    },
-    {
-        "id": "69b66e92dd97e",
-        "customer": {
-            "name": "Eman Mohamed",
-            "email": "emankamel877@gmail.com",
-            "address": "cccx",
-            "phone": "222",
-            "notes": "kkk"
-        },
-        "products": [
-            []
-        ],
-        "total": 0,
-        "date": "2026-03-15 09:32:18"
-    },
-    {
         "id": "69b6777826b1f",
         "customer": {
             "name": "Eman Mohamed",
@@ -88,33 +21,7 @@
         "date": "2026-03-15 10:10:16"
     },
     {
-        "id": "69b677d23ebb0",
-        "customer": {
-            "name": "Eman Mohamed",
-            "email": "emankamel877@gmail.com",
-            "address": "cccx",
-            "phone": "2222",
-            "notes": "kkk"
-        },
-        "products": [],
-        "total": 0,
-        "date": "2026-03-15 10:11:46"
-    },
-    {
-        "id": "69b679405640b",
-        "customer": {
-            "name": "Eman Mohamed",
-            "email": "emankamel877@gmail.com",
-            "address": "cccx",
-            "phone": "2222",
-            "notes": "kkk"
-        },
-        "products": [],
-        "total": 0,
-        "date": "2026-03-15 10:17:52"
-    },
-    {
-        "id": "69b6e14a1b814",
+        "id": "69b6efbe77d92",
         "customer": {
             "name": "",
             "email": "",
@@ -122,8 +29,16 @@
             "phone": "",
             "notes": ""
         },
-        "products": [],
-        "total": 0,
-        "date": "2026-03-15 17:41:46"
+        "products": [
+            {
+                "name": "headphone",
+                "price": 80,
+                "image": "assets\/download (4).jpg",
+                "quantity": 1
+            },
+            "headphone"
+        ],
+        "total": 80,
+        "date": "2026-03-15 18:43:26"
     }
 ]

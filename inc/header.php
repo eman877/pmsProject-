@@ -33,9 +33,11 @@
                         <?php session_start();?>
                         <?php if(isset($_SESSION['user'])):?>
                         <li class="nav-item"><a class="nav-link" href="handlers/users/logout.php">logout</a></li>
+                        <li class="nav-item"><a class="nav-link" href="my_orders.php">my_orders</a></li>
                         <?php else: ?>
                         <li class="nav-item"><a class="nav-link" href="login.php">login</a></li>
                         <?php endif; ?>    
+                        
                     </ul>
               
                     <form class="d-flex" action="cart.php">
