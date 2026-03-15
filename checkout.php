@@ -19,14 +19,17 @@
 
 
 $totalPrice = 0;
-$cartItems = $_SESSION['cart'] ?? [];
+$cartItems = isset($_SESSION['cart']) ? $_SESSION['cart'] : [];
 ?>
 <div class="products">
     <ul class="list-unstyled">
         <?php if(!empty($cartItems)): ?>
+            
             <?php foreach($cartItems as $item): 
                 $itemTotal = $item['price'] * $item['quantity'];
                 $totalPrice += $itemTotal;
+             
+            
             ?>
             <li class="border p-2 my-1">
                 <?= $item['name'] ?> - 
@@ -67,9 +70,11 @@ $cartItems = $_SESSION['cart'] ?? [];
                         <div class="mb-3">
                             <label for="">Notes</label>
                             <input type="text" name="notes" id="" class="form-control">
+                           
                         </div>
                         <div class="mb-3">
                             <input type="submit" value="Send" id="" class="btn btn-success">
+
                         </div>
                     </div>
                 </form>

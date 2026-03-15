@@ -1,5 +1,16 @@
 <?php
+session_start();
+
 if($_SERVER['REQUEST_METHOD'] === 'POST'){
+
+    $cartItems = $_SESSION['cart'] ?? [];
+
+    $totalPrice = 0;
+    foreach($cartItems as $item){
+        $totalPrice += $item['price'] * $item['quantity'];
+         $cartItems[] = $item['name'];
+    }
+
     $ordersFile = '../../data/orders.json';
     $orders = [];
 
@@ -27,6 +38,8 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
 
     unset($_SESSION['cart']);
 
-    echo "<p class='text-success'>Order submitted successfully! Your order ID is {$newOrder['id']}</p>";
+    echo "Order submitted successfully! Your order ID is {$newOrder['id']}";
+    header("Location:../../checkout.php");
+    exit;
 }
 ?>

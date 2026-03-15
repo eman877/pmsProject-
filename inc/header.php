@@ -44,6 +44,7 @@
                             Cart
                             <span class="badge bg-dark text-white ms-1 rounded-pill">
                             <?php
+                                $total_items = 0;
                                 if(!empty($_SESSION['cart'])){
                                 $total_items = 0;
                                 foreach($_SESSION['cart'] as $index => $item){
